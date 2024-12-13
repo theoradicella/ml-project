@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.DS_Store
 
 # C extensions
 *.so
@@ -47,9 +48,6 @@ checkpoints/
 *.pth
 *.pkl
 *.joblib
-
-# TensorBoard logs
-logs/
 
 # Large dataset files and archives
 *.csv.zip
