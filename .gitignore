@@ -1,1 +1,67 @@
-data/*
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environment
+venv/
+ENV/
+env/
+*.env
+*.venv
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints
+
+# VSCode settings
+.vscode/
+
+# Pytest cache
+.pytest_cache/
+
+# mypy
+.mypy_cache/
+
+# Caches and logs
+*.log
+*.out
+*.pid
+*.seed
+
+# Data and models
+models/
+checkpoints/
+*.h5
+*.pth
+*.pkl
+*.joblib
+
+# TensorBoard logs
+logs/
+
+# Large dataset files and archives
+*.csv.zip
+*.tar.gz
+*.tar
+*.zip
+*.gz
+
+# Ignore environment variables and credentials
+.env
+*.secret
+credentials.json
+
+# Ignore everything in data/ EXCEPT data/*
+!data/*
