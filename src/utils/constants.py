@@ -1,0 +1,43 @@
+country_mapping = mapping = {
+    # North America
+    "United-States": "North America",
+    "Canada": "North America",
+    "Mexico": "North America",
+    "Puerto-Rico": "North America",
+    "Cuba": "North America",
+    "Jamaica": "North America",
+    "Dominican-Republic": "North America",
+    "Honduras": "North America",
+    "Guatemala": "North America",
+    "El-Salvador": "North America",
+    "Nicaragua": "North America",
+    "Haiti": "North America",
+    # Europe
+    "England": "Europe",
+    "Germany": "Europe",
+    "Italy": "Europe",
+    "Poland": "Europe",
+    "Portugal": "Europe",
+    "France": "Europe",
+    "Ireland": "Europe",
+    "Scotland": "Europe",
+    # Asia
+    "Philippines": "Asia",
+    "India": "Asia",
+    "China": "Asia",
+    "Vietnam": "Asia",
+    "Japan": "Asia",
+    "Iran": "Asia",
+    "Taiwan": "Asia",
+    "Hong": "Asia",
+    "Thailand": "Asia",
+    "Laos": "Asia",
+    # South America
+    "Columbia": "South America",
+    "Ecuador": "South America",
+    "Peru": "South America",
+    "South": "South America",
+    "Brazil": "South America",
+    # Other
+    "Other": "Other",
+}
