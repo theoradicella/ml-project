@@ -157,3 +157,37 @@ def plot_validation_curve(
     ax.set_ylabel(scoring)
     ax.legend(loc="best")
     ax.grid(alpha=0.3)
+
+
+# Function to plot category-target relationships
+def plot_category_target_count(df, column_name, target_column, target_value=1):
+    """
+    Plots the count of rows for each category in a given column where the target equals the target_value.
+
+    Parameters:
+    - df: pandas DataFrame
+    - column_name: The name of the column to analyze (categorical feature).
+    - target_column: The name of the target column.
+    - target_value: The target value to filter on (default is 1).
+    """
+    if column_name not in df.columns:
+        print(f"Column '{column_name}' does not exist in the dataset.")
+        return
+
+    # Filter rows where target equals the target_value
+    filtered_df = df[df[target_column] == target_value]
+
+    # Group by the column and count rows
+    category_counts = (
+        filtered_df.groupby(column_name).size().sort_values(ascending=False)
+    )
+
+    # Plot the results
+    plt.figure(figsize=(10, 6))
+    category_counts.plot(kind="bar", color="skyblue")
+    plt.title(f"Count of Rows by {column_name} where {target_column} = {target_value}")
+    plt.ylabel("Count of Rows")
+    plt.xlabel(column_name)
+    plt.xticks(rotation=45, ha="right")
+    plt.tight_layout()
+    plt.show()
